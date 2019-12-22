@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ListViewAndALertDialogWithSQL</string>
+    <string name="textview">TextView</string>
+
+    <string-array name="landmark_list">
+        <item></item>
+        <item></item>
+        <item></item>
+
+    </string-array>
+</resources>
