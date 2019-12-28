@@ -5,11 +5,10 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
     <androidx.cardview.widget.CardView
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        card_view:cardBackgroundColor="#D3D3D3"
-        card_view:cardCornerRadius="5dp"
-        card_view:cardElevation="5dp"
-        card_view:cardUseCompatPadding="false"
+        app:cardBackgroundColor="#D3D3D3"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="false"
         android:layout_margin="7dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -26,27 +25,35 @@
             android:layout_marginLeft="3dp"
             app:srcCompat="@drawable/rizal" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/TextViewTitle"
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_width="224dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="@string/textview"
-                android:textSize="16sp" />
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/TextViewDetails"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/textview" />
+                <TextView
+                    android:id="@+id/TextViewTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/textview"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/TextViewDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textview" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ButtonDelete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="ButtonOnclickDelete"
+                android:background="@drawable/ic_delete_forever_black_24dp" />
         </LinearLayout>
-    </LinearLayout>
     </androidx.cardview.widget.CardView>
 
 </LinearLayout>
